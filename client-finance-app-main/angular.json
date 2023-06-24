@@ -32,7 +32,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/aos/dist/aos.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -102,6 +104,6 @@
     }
   },
   "cli": {
-    "analytics": "09db8b2e-577d-4bd5-98e8-b95fa3451c46"
+    "analytics": "28776d00-00a5-4e4f-8bac-4ca5dd8cb3c1"
   }
 }
