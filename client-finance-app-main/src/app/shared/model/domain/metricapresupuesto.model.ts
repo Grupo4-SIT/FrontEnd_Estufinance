@@ -1,12 +1,9 @@
 import { Temporabilidad } from "../enums/temporalidad";
 
-export interface MetricaPresupuesto {
-  idPresupuesto: number | string | null;
-  mostraMetricas: boolean;
+export interface MetricaPresupuesto{
   ingresoNecesarioMinimo: number;
   ingresoDisponible: number;
   temporalidad: Temporabilidad;
-  conceptos: [{ [tipo: string]: number }];
-  relacionTipoMovimiento: [{ [tipo: string]: number }];
+  conceptos: [{[tipo: string]: number}];
+  relacionTipoMovimiento: [{[tipo: string]: number}];
 }
-
