@@ -1,9 +1,8 @@
 export interface Objetivo {
-    id: number;
-    nombre: string;
-    descripcion: string;
-    fechaEstimada: Date;
-    monto: number;
-    usuarioID: number;
-  }
-  
+  id: number | string | null;
+  nombre: string;
+  descripcion: string;
+  fechaEstimada: Date;
+  monto: number;
+  idUsuario: number | string | null;
+}
