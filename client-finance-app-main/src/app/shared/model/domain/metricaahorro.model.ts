@@ -1,8 +1,7 @@
 export interface MetricaAhorros {
-    mostraMetricas: boolean;
-    ahorroTotal: number;
-    ahorroAutomatico: string;
-    promedioAhorro: number;
-    nivelCumplimientoPromedio: number;
-  }
-  
+  mostraMetricas: boolean;
+  ahorroTotal: number;
+  ahorroAutomatico: string;
+  promedioAhorro: number;
+  nivelCumplimientoPromedio: number;
+}

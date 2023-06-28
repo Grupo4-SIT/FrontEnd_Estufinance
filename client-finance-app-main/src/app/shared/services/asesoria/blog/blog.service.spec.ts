@@ -1,19 +1,16 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Blogs } from 'src/app/shared/model/blogs.model';
-import { environmentJsonBlogDev } from 'src/environments/environment.development';
+import { TestBed } from '@angular/core/testing';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class BlogService {
-  API_URL: string;
-  constructor( private httpClient: HttpClient) { 
-    this.API_URL = environmentJsonBlogDev.url;
-  }
+import { BlogService } from './blog.service';
 
-  getJsonBlog(): Observable<Blogs[]>{
-    return this.httpClient.get<Blogs[]>(`${this.API_URL}`)
-  }
-}
+describe('BlogService', () => {
+  let service: BlogService;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(BlogService);
+  });
+
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+});
